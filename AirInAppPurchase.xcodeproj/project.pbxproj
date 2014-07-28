@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A682111986215600ED7944 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 67A6820D1986215600ED7944 /* CHANGELOG.md */; };
+		67A682121986215600ED7944 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A6820E1986215600ED7944 /* JSONKit.h */; };
+		67A682131986215600ED7944 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A6820F1986215600ED7944 /* JSONKit.m */; };
+		67A682141986215600ED7944 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 67A682101986215600ED7944 /* README.md */; };
 		67EBB39F1986094400CE99C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB39E1986094400CE99C1 /* Foundation.framework */; };
 		67EBB3A11986094400CE99C1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3A01986094400CE99C1 /* CoreFoundation.framework */; };
 		67EBB3A31986094400CE99C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3A21986094400CE99C1 /* UIKit.framework */; };
@@ -24,9 +28,14 @@
 		67EBB3BB1986094400CE99C1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3BA1986094400CE99C1 /* Security.framework */; };
 		67EBB3C61986094400CE99C1 /* AirInAppPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */; };
 		67EBB3C81986094400CE99C1 /* AirInAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */; };
+		67EBB3D9198609A300CE99C1 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EBB3D8198609A300CE99C1 /* FlashRuntimeExtensions.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67A6820D1986215600ED7944 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		67A6820E1986215600ED7944 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		67A6820F1986215600ED7944 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		67A682101986215600ED7944 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		67EBB39B1986094400CE99C1 /* libAirInAppPurchase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirInAppPurchase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EBB39E1986094400CE99C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		67EBB3A01986094400CE99C1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -52,6 +61,7 @@
 		67EBB3CA1986094400CE99C1 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
 		67EBB3CB1986094400CE99C1 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
 		67EBB3CC1986094400CE99C1 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
+		67EBB3D8198609A300CE99C1 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +90,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67A6820C1986215600ED7944 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				67A6820D1986215600ED7944 /* CHANGELOG.md */,
+				67A6820E1986215600ED7944 /* JSONKit.h */,
+				67A6820F1986215600ED7944 /* JSONKit.m */,
+				67A682101986215600ED7944 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
 		67EBB3921986094400CE99C1 = {
 			isa = PBXGroup;
 			children = (
+				67EBB3D8198609A300CE99C1 /* FlashRuntimeExtensions.h */,
 				67EBB3C21986094400CE99C1 /* AirInAppPurchase */,
 				67EBB39D1986094400CE99C1 /* Frameworks */,
 				67EBB39C1986094400CE99C1 /* Products */,
@@ -124,6 +146,7 @@
 		67EBB3C21986094400CE99C1 /* AirInAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
+				67A6820C1986215600ED7944 /* JSONKit */,
 				67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */,
 				67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */,
 				67EBB3C31986094400CE99C1 /* Supporting Files */,
@@ -150,7 +173,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67EBB3D9198609A300CE99C1 /* FlashRuntimeExtensions.h in Headers */,
 				67EBB3C61986094400CE99C1 /* AirInAppPurchase.h in Headers */,
+				67A682121986215600ED7944 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67EBB3C81986094400CE99C1 /* AirInAppPurchase.m in Sources */,
+				67A682111986215600ED7944 /* CHANGELOG.md in Sources */,
+				67A682141986215600ED7944 /* README.md in Sources */,
+				67A682131986215600ED7944 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,24 +364,34 @@
 		67EBB3D01986094400CE99C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				DSTROOT = /tmp/AirInAppPurchase.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirInAppPurchase/AirInAppPurchase-Prefix.pch";
+				GCC_VERSION = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.1;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
 		67EBB3D11986094400CE99C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				DSTROOT = /tmp/AirInAppPurchase.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirInAppPurchase/AirInAppPurchase-Prefix.pch";
+				GCC_VERSION = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.1;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -363,7 +401,8 @@
 				AIR_SDK_PATH = "/Applications/Adobe Gaming SDK 1.3/AIR SDK";
 				EXECUTABLE_EXTENSION = ane;
 				EXECUTABLE_PREFIX = "";
-				NATIVEEXTENSION_SWC = "/Users/chuang-hueichiou/Dropbox/Air-In-App-Purchase.swc";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				NATIVEEXTENSION_SWC = "/Users/chuang-hueichiou/Documents/Starling/AirInAppPurchase/bin/AirInAppPurchase.swc";
 				PRODUCT_NAME = AirInAppPurchase;
 			};
 			name = Debug;
@@ -374,7 +413,8 @@
 				AIR_SDK_PATH = "/Applications/Adobe Gaming SDK 1.3/AIR SDK";
 				EXECUTABLE_EXTENSION = ane;
 				EXECUTABLE_PREFIX = "";
-				NATIVEEXTENSION_SWC = "/Users/chuang-hueichiou/Dropbox/Air-In-App-Purchase.swc";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				NATIVEEXTENSION_SWC = "/Users/chuang-hueichiou/Documents/Starling/AirInAppPurchase/bin/AirInAppPurchase.swc";
 				PRODUCT_NAME = AirInAppPurchase;
 			};
 			name = Release;
@@ -416,6 +456,7 @@
 				67EBB3D11986094400CE99C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67EBB3D21986094400CE99C1 /* Build configuration list for PBXNativeTarget "AirInAppPurchase.ane" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +465,7 @@
 				67EBB3D41986094400CE99C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67EBB3D51986094400CE99C1 /* Build configuration list for PBXNativeTarget "DebugAirInAppPurchaseAIRApp" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +474,7 @@
 				67EBB3D71986094400CE99C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
