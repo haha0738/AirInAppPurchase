@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67EBB39F1986094400CE99C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB39E1986094400CE99C1 /* Foundation.framework */; };
+		67EBB3A11986094400CE99C1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3A01986094400CE99C1 /* CoreFoundation.framework */; };
+		67EBB3A31986094400CE99C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3A21986094400CE99C1 /* UIKit.framework */; };
+		67EBB3A51986094400CE99C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3A41986094400CE99C1 /* MobileCoreServices.framework */; };
+		67EBB3A71986094400CE99C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3A61986094400CE99C1 /* CoreGraphics.framework */; };
+		67EBB3A91986094400CE99C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3A81986094400CE99C1 /* SystemConfiguration.framework */; };
+		67EBB3AB1986094400CE99C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3AA1986094400CE99C1 /* AudioToolbox.framework */; };
+		67EBB3AD1986094400CE99C1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3AC1986094400CE99C1 /* CFNetwork.framework */; };
+		67EBB3AF1986094400CE99C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3AE1986094400CE99C1 /* QuartzCore.framework */; };
+		67EBB3B11986094400CE99C1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3B01986094400CE99C1 /* OpenGLES.framework */; };
+		67EBB3B31986094400CE99C1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3B21986094400CE99C1 /* CoreLocation.framework */; };
+		67EBB3B51986094400CE99C1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3B41986094400CE99C1 /* CoreMedia.framework */; };
+		67EBB3B71986094400CE99C1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3B61986094400CE99C1 /* CoreVideo.framework */; };
+		67EBB3B91986094400CE99C1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3B81986094400CE99C1 /* AVFoundation.framework */; };
+		67EBB3BB1986094400CE99C1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3BA1986094400CE99C1 /* Security.framework */; };
+		67EBB3C61986094400CE99C1 /* AirInAppPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */; };
+		67EBB3C81986094400CE99C1 /* AirInAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		67EBB39B1986094400CE99C1 /* libAirInAppPurchase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirInAppPurchase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EBB39E1986094400CE99C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		67EBB3A01986094400CE99C1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		67EBB3A21986094400CE99C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		67EBB3A41986094400CE99C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		67EBB3A61986094400CE99C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		67EBB3A81986094400CE99C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		67EBB3AA1986094400CE99C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		67EBB3AC1986094400CE99C1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		67EBB3AE1986094400CE99C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		67EBB3B01986094400CE99C1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		67EBB3B21986094400CE99C1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		67EBB3B41986094400CE99C1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		67EBB3B61986094400CE99C1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		67EBB3B81986094400CE99C1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		67EBB3BA1986094400CE99C1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		67EBB3BE1986094400CE99C1 /* AirInAppPurchase.ane */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = AirInAppPurchase.ane; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EBB3C11986094400CE99C1 /* DebugAirInAppPurchaseAIRApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugAirInAppPurchaseAIRApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EBB3C41986094400CE99C1 /* AirInAppPurchase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirInAppPurchase-Prefix.pch"; sourceTree = "<group>"; };
+		67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirInAppPurchase.h; sourceTree = "<group>"; };
+		67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirInAppPurchase.m; sourceTree = "<group>"; };
+		67EBB3C91986094400CE99C1 /* extension.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = extension.xml; sourceTree = "<group>"; };
+		67EBB3CA1986094400CE99C1 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
+		67EBB3CB1986094400CE99C1 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
+		67EBB3CC1986094400CE99C1 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67EBB3981986094400CE99C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EBB3B51986094400CE99C1 /* CoreMedia.framework in Frameworks */,
+				67EBB3BB1986094400CE99C1 /* Security.framework in Frameworks */,
+				67EBB3A11986094400CE99C1 /* CoreFoundation.framework in Frameworks */,
+				67EBB3B31986094400CE99C1 /* CoreLocation.framework in Frameworks */,
+				67EBB3A51986094400CE99C1 /* MobileCoreServices.framework in Frameworks */,
+				67EBB3B71986094400CE99C1 /* CoreVideo.framework in Frameworks */,
+				67EBB3AD1986094400CE99C1 /* CFNetwork.framework in Frameworks */,
+				67EBB3A31986094400CE99C1 /* UIKit.framework in Frameworks */,
+				67EBB3A71986094400CE99C1 /* CoreGraphics.framework in Frameworks */,
+				67EBB3B11986094400CE99C1 /* OpenGLES.framework in Frameworks */,
+				67EBB3AB1986094400CE99C1 /* AudioToolbox.framework in Frameworks */,
+				67EBB3A91986094400CE99C1 /* SystemConfiguration.framework in Frameworks */,
+				67EBB39F1986094400CE99C1 /* Foundation.framework in Frameworks */,
+				67EBB3B91986094400CE99C1 /* AVFoundation.framework in Frameworks */,
+				67EBB3AF1986094400CE99C1 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67EBB3921986094400CE99C1 = {
+			isa = PBXGroup;
+			children = (
+				67EBB3C21986094400CE99C1 /* AirInAppPurchase */,
+				67EBB39D1986094400CE99C1 /* Frameworks */,
+				67EBB39C1986094400CE99C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67EBB39C1986094400CE99C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67EBB39B1986094400CE99C1 /* libAirInAppPurchase.a */,
+				67EBB3BE1986094400CE99C1 /* AirInAppPurchase.ane */,
+				67EBB3C11986094400CE99C1 /* DebugAirInAppPurchaseAIRApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67EBB39D1986094400CE99C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67EBB39E1986094400CE99C1 /* Foundation.framework */,
+				67EBB3A01986094400CE99C1 /* CoreFoundation.framework */,
+				67EBB3A21986094400CE99C1 /* UIKit.framework */,
+				67EBB3A41986094400CE99C1 /* MobileCoreServices.framework */,
+				67EBB3A61986094400CE99C1 /* CoreGraphics.framework */,
+				67EBB3A81986094400CE99C1 /* SystemConfiguration.framework */,
+				67EBB3AA1986094400CE99C1 /* AudioToolbox.framework */,
+				67EBB3AC1986094400CE99C1 /* CFNetwork.framework */,
+				67EBB3AE1986094400CE99C1 /* QuartzCore.framework */,
+				67EBB3B01986094400CE99C1 /* OpenGLES.framework */,
+				67EBB3B21986094400CE99C1 /* CoreLocation.framework */,
+				67EBB3B41986094400CE99C1 /* CoreMedia.framework */,
+				67EBB3B61986094400CE99C1 /* CoreVideo.framework */,
+				67EBB3B81986094400CE99C1 /* AVFoundation.framework */,
+				67EBB3BA1986094400CE99C1 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67EBB3C21986094400CE99C1 /* AirInAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */,
+				67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */,
+				67EBB3C31986094400CE99C1 /* Supporting Files */,
+			);
+			path = AirInAppPurchase;
+			sourceTree = "<group>";
+		};
+		67EBB3C31986094400CE99C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67EBB3C41986094400CE99C1 /* AirInAppPurchase-Prefix.pch */,
+				67EBB3C91986094400CE99C1 /* extension.xml */,
+				67EBB3CA1986094400CE99C1 /* platformoptions.xml */,
+				67EBB3CB1986094400CE99C1 /* generateANE.sh */,
+				67EBB3CC1986094400CE99C1 /* debugIPA.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		67EBB3991986094400CE99C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EBB3C61986094400CE99C1 /* AirInAppPurchase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		67EBB39A1986094400CE99C1 /* AirInAppPurchase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67EBB3CF1986094400CE99C1 /* Build configuration list for PBXNativeTarget "AirInAppPurchase" */;
+			buildPhases = (
+				67EBB3971986094400CE99C1 /* Sources */,
+				67EBB3981986094400CE99C1 /* Frameworks */,
+				67EBB3991986094400CE99C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirInAppPurchase;
+			productName = AirInAppPurchase;
+			productReference = 67EBB39B1986094400CE99C1 /* libAirInAppPurchase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		67EBB3BD1986094400CE99C1 /* AirInAppPurchase.ane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67EBB3D21986094400CE99C1 /* Build configuration list for PBXNativeTarget "AirInAppPurchase.ane" */;
+			buildPhases = (
+				67EBB3BC1986094400CE99C1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirInAppPurchase.ane;
+			productName = AirInAppPurchase.ane;
+			productReference = 67EBB3BE1986094400CE99C1 /* AirInAppPurchase.ane */;
+			productType = "com.apple.product-type.library.static";
+		};
+		67EBB3C01986094400CE99C1 /* DebugAirInAppPurchaseAIRApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67EBB3D51986094400CE99C1 /* Build configuration list for PBXNativeTarget "DebugAirInAppPurchaseAIRApp" */;
+			buildPhases = (
+				67EBB3BF1986094400CE99C1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DebugAirInAppPurchaseAIRApp;
+			productName = DebugAirInAppPurchaseAIRApp;
+			productReference = 67EBB3C11986094400CE99C1 /* DebugAirInAppPurchaseAIRApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67EBB3931986094400CE99C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					67EBB39A1986094400CE99C1 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					67EBB3BD1986094400CE99C1 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					67EBB3C01986094400CE99C1 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 67EBB3961986094400CE99C1 /* Build configuration list for PBXProject "AirInAppPurchase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 67EBB3921986094400CE99C1;
+			productRefGroup = 67EBB39C1986094400CE99C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67EBB39A1986094400CE99C1 /* AirInAppPurchase */,
+				67EBB3BD1986094400CE99C1 /* AirInAppPurchase.ane */,
+				67EBB3C01986094400CE99C1 /* DebugAirInAppPurchaseAIRApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67EBB3BC1986094400CE99C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/generateANE.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/generateANE.sh\"\n\t\t\t\t\t";
+		};
+		67EBB3BF1986094400CE99C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/debugIPA.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/debugIPA.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67EBB3971986094400CE99C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EBB3C81986094400CE99C1 /* AirInAppPurchase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		67EBB3CD1986094400CE99C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Gaming SDK 1.3/AIR SDK/include/";
+			};
+			name = Debug;
+		};
+		67EBB3CE1986094400CE99C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Gaming SDK 1.3/AIR SDK/include/";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67EBB3D01986094400CE99C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AirInAppPurchase.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirInAppPurchase/AirInAppPurchase-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		67EBB3D11986094400CE99C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AirInAppPurchase.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirInAppPurchase/AirInAppPurchase-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		67EBB3D31986094400CE99C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Applications/Adobe Gaming SDK 1.3/AIR SDK";
+				EXECUTABLE_EXTENSION = ane;
+				EXECUTABLE_PREFIX = "";
+				NATIVEEXTENSION_SWC = "/Users/chuang-hueichiou/Dropbox/Air-In-App-Purchase.swc";
+				PRODUCT_NAME = AirInAppPurchase;
+			};
+			name = Debug;
+		};
+		67EBB3D41986094400CE99C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Applications/Adobe Gaming SDK 1.3/AIR SDK";
+				EXECUTABLE_EXTENSION = ane;
+				EXECUTABLE_PREFIX = "";
+				NATIVEEXTENSION_SWC = "/Users/chuang-hueichiou/Dropbox/Air-In-App-Purchase.swc";
+				PRODUCT_NAME = AirInAppPurchase;
+			};
+			name = Release;
+		};
+		67EBB3D61986094400CE99C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Applications/Adobe Gaming SDK 1.3/AIR SDK";
+				NATIVEEXTENSION_SWC = "/Users/chuang-hueichiou/Dropbox/Air-In-App-Purchase.swc";
+				PRODUCT_NAME = DebugAirInAppPurchaseAIRApp;
+			};
+			name = Debug;
+		};
+		67EBB3D71986094400CE99C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Applications/Adobe Gaming SDK 1.3/AIR SDK";
+				NATIVEEXTENSION_SWC = "/Users/chuang-hueichiou/Dropbox/Air-In-App-Purchase.swc";
+				PRODUCT_NAME = DebugAirInAppPurchaseAIRApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67EBB3961986094400CE99C1 /* Build configuration list for PBXProject "AirInAppPurchase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67EBB3CD1986094400CE99C1 /* Debug */,
+				67EBB3CE1986094400CE99C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67EBB3CF1986094400CE99C1 /* Build configuration list for PBXNativeTarget "AirInAppPurchase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67EBB3D01986094400CE99C1 /* Debug */,
+				67EBB3D11986094400CE99C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		67EBB3D21986094400CE99C1 /* Build configuration list for PBXNativeTarget "AirInAppPurchase.ane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67EBB3D31986094400CE99C1 /* Debug */,
+				67EBB3D41986094400CE99C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		67EBB3D51986094400CE99C1 /* Build configuration list for PBXNativeTarget "DebugAirInAppPurchaseAIRApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67EBB3D61986094400CE99C1 /* Debug */,
+				67EBB3D71986094400CE99C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67EBB3931986094400CE99C1 /* Project object */;
+}
