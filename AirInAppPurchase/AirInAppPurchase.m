@@ -39,6 +39,8 @@
  */
 
 #import "AirInAppPurchase.h"
+#import "NSString+Base64.h"
+
 FREContext _AirInAppPurchaseContext = nil;
 void *AirInAppRefToSelf;
 
@@ -156,11 +158,11 @@ void *AirInAppRefToSelf;
     // purchase done
     // dispatch event
     data = [[NSMutableDictionary alloc] init];
-    [data setValue:[[transaction payment] productIdentifier] forKey:@"productId"];
+    [data setValue:[[transaction payment] productIdentifier] forKey:@"id"];
     
     NSString* receiptString = [[[NSString alloc] initWithData:transaction.transactionReceipt encoding:NSUTF8StringEncoding] autorelease];
-    [data setValue:receiptString forKey:@"receipt"];
-    [data setValue:@"AppStore"   forKey:@"receiptType"];
+    [data setValue:[receiptString Base64String] forKey:@"receipt"];
+    //[data setValue:@"AppStore"   forKey:@"receiptType"];
     
     FREDispatchStatusEventAsync(_AirInAppPurchaseContext, (uint8_t*)"PURCHASE_SUCCESSFUL", (uint8_t*)[[data JSONString] UTF8String]);
 }
@@ -180,7 +182,7 @@ void *AirInAppRefToSelf;
     [data setValue:[[transaction error] localizedDescription] forKey:@"FailureDescription"];
     [data setValue:[[transaction error] localizedRecoverySuggestion] forKey:@"RecoverySuggestion"];
     
-    NSString *error = transaction.error.code == SKErrorPaymentCancelled ? @"RESULT_USER_CANCELED" : [data JSONString];
+    NSString *error = [data JSONString];//transaction.error.code == SKErrorPaymentCancelled ? @"RESULT_USER_CANCELED" : [data JSONString];
     
     // conclude the transaction
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];

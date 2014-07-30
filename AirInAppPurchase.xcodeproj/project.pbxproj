@@ -29,6 +29,7 @@
 		67EBB3C61986094400CE99C1 /* AirInAppPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */; };
 		67EBB3C81986094400CE99C1 /* AirInAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */; };
 		67EBB3D9198609A300CE99C1 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EBB3D8198609A300CE99C1 /* FlashRuntimeExtensions.h */; };
+		67F2DA4D1988F5D300F24F2C /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F2DA4C1988F5D300F24F2C /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		67EBB3CB1986094400CE99C1 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
 		67EBB3CC1986094400CE99C1 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
 		67EBB3D8198609A300CE99C1 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		67F2DA4B1988F56200F24F2C /* NSString+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		67F2DA4C1988F5D300F24F2C /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */,
 				67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */,
 				67EBB3C31986094400CE99C1 /* Supporting Files */,
+				67F2DA4B1988F56200F24F2C /* NSString+Base64.h */,
+				67F2DA4C1988F5D300F24F2C /* NSString+Base64.m */,
 			);
 			path = AirInAppPurchase;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				67A682111986215600ED7944 /* CHANGELOG.md in Sources */,
 				67A682141986215600ED7944 /* README.md in Sources */,
 				67A682131986215600ED7944 /* JSONKit.m in Sources */,
+				67F2DA4D1988F5D300F24F2C /* NSString+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
