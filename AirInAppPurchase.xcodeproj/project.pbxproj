@@ -28,8 +28,8 @@
 		67EBB3BB1986094400CE99C1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBB3BA1986094400CE99C1 /* Security.framework */; };
 		67EBB3C61986094400CE99C1 /* AirInAppPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */; };
 		67EBB3C81986094400CE99C1 /* AirInAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */; };
-		67EBB3D9198609A300CE99C1 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EBB3D8198609A300CE99C1 /* FlashRuntimeExtensions.h */; };
 		67F2DA4D1988F5D300F24F2C /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F2DA4C1988F5D300F24F2C /* NSString+Base64.m */; };
+		67F2DA4F19890CD300F24F2C /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F2DA4E19890CD300F24F2C /* FlashRuntimeExtensions.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,9 +62,9 @@
 		67EBB3CA1986094400CE99C1 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
 		67EBB3CB1986094400CE99C1 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
 		67EBB3CC1986094400CE99C1 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
-		67EBB3D8198609A300CE99C1 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
 		67F2DA4B1988F56200F24F2C /* NSString+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		67F2DA4C1988F5D300F24F2C /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		67F2DA4E19890CD300F24F2C /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,6 @@
 		67EBB3921986094400CE99C1 = {
 			isa = PBXGroup;
 			children = (
-				67EBB3D8198609A300CE99C1 /* FlashRuntimeExtensions.h */,
 				67EBB3C21986094400CE99C1 /* AirInAppPurchase */,
 				67EBB39D1986094400CE99C1 /* Frameworks */,
 				67EBB39C1986094400CE99C1 /* Products */,
@@ -149,6 +148,7 @@
 		67EBB3C21986094400CE99C1 /* AirInAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
+				67F2DA4E19890CD300F24F2C /* FlashRuntimeExtensions.h */,
 				67A6820C1986215600ED7944 /* JSONKit */,
 				67EBB3C51986094400CE99C1 /* AirInAppPurchase.h */,
 				67EBB3C71986094400CE99C1 /* AirInAppPurchase.m */,
@@ -178,9 +178,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67EBB3D9198609A300CE99C1 /* FlashRuntimeExtensions.h in Headers */,
 				67EBB3C61986094400CE99C1 /* AirInAppPurchase.h in Headers */,
 				67A682121986215600ED7944 /* JSONKit.h in Headers */,
+				67F2DA4F19890CD300F24F2C /* FlashRuntimeExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
