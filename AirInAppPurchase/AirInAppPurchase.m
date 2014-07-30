@@ -93,19 +93,27 @@ void *AirInAppRefToSelf;
     [numberFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
     [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
     
-    NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
+    //NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
+    NSMutableArray * array = [[NSMutableArray alloc] init];
     NSString *formattedString;
     
     for (SKProduct* product in [response products])
     {
-        [_productsDic setValue:product forKey:product.productIdentifier];
         [numberFormatter setLocale:product.priceLocale];
         formattedString = [numberFormatter stringFromNumber:product.price];
-        [dictionary setValue:formattedString forKey:[product productIdentifier]];
+        
+        [_productsDic setValue:product forKey:product.productIdentifier];
+        NSMutableDictionary* productDic = [[NSMutableDictionary alloc]init];
+        [productDic setValue:product.localizedTitle forKey:@"title"];
+        [productDic setValue:formattedString forKey:@"price"];
+        [productDic setValue:product.productIdentifier forKey:@"id"];
+        [productDic setValue:product.localizedDescription forKey:@"description"];
+        [array addObject:productDic];
+        //[dictionary setValue:productDic forKey:[product productIdentifier]];
     }
     
     
-    NSString* jsonDictionary = [dictionary JSONString];
+    NSString* jsonDictionary = [array JSONString];
     
     
     
@@ -119,7 +127,7 @@ void *AirInAppRefToSelf;
     }
     else
     {
-        FREDispatchStatusEventAsync(_AirInAppPurchaseContext ,(uint8_t*) "PRODUCT_INFO_SUCCESS", (uint8_t*) [jsonDictionary UTF8String] );
+        FREDispatchStatusEventAsync(_AirInAppPurchaseContext ,(uint8_t*) "PRODUCT_INFO_RECEIVED", (uint8_t*) [jsonDictionary UTF8String] );
     }
 }
 
